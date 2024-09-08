@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+html {
+    font-family:  'Rubik',sans-serif;
+    color:  #444;
+  }
+/* class has more priority than elements h1 nav etc  */
+.container{
+ margin: 0 auto;
+ width: 1200px;   
+}  
+
+header{
+ 
+  height: 100vh;
+  position: relative;
+  /* there is a stack in which  linear-gradient() it is on top and url(hero.jpg); is in bottom*/
+  background-image:  linear-gradient(rgba(34, 34, 34 , 0.6),rgba(34,34,34,0.6)),url(hero.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+nav{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    /* background-image: linear-gradient(to right, red , blue); */
+    /* background-color: green; */
+  }
+ 
+  .header-container{
+   width: 1200px;
+   position: absolute;
+
+   /* In relation with parent element */
+   left: 50%;
+   top: 50%;
+
+   /* In relation with Element size */
+   transform: translate(-50%,-50%);
+   /* background-color: green; */
+
+  }
+
+  .header-container-inner{
+    width: 50%;
+    
+  }
+
+  h1{
+    font-size: 52px;
+    margin-bottom: 32px;
+    line-height: 1.05;
+  }
+
+  p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom:48px ;
+  }
+ 
+  .btn:link,
+  .btn:visited{
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+  
+  }
+
+
+  h2{
+    font-size: 44px;
+    margin-bottom: 48px;
+  }
+
+  section{
+    padding: 96px 0;
+    background-color: blue;
+  }
